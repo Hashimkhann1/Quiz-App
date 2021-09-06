@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Quiz app</title>
+	<link rel="stylesheet" href="quiz.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+	 integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+	<div class="intro py-3 bg-white text-center">
+		<div class="container">
+			<h1 class="text-primary display-3 my-4">Develpor Quiz</h1>
+		</div>
+	</div>
+	
+	<div class="result py-4 d-none bg-light text-center">
+		<div class="container">
+			<p>You are <span class="text-primary display-4 p-3">0%</span> Expert Developer</p>
+		</div>
+	</div>
+	<div class="quiz py-4 bg-primary">
+		<div class="container">
+			<h2 class="my-5 text-white">Let's begin!</h2>
+			<form class="quiz-form text-light">
+
+				<div class="my-5">
+					<p class="lead font-weight-normal">1. What is the backone of webpages?</p>
+					<div class="form-check my-2 text-white-50">
+						<input type="radio" name="q1" value="A" checked>
+						<label class="form-check-label">HTML</label>
+					</div>
+					<div class="form-check my-2 text-white-50">
+						<input type="radio" name="q1" value="B">
+						<label class="form-check-label">CSS</label>
+					</div>
+				</div>
+
+				<div class="my-5">
+					<p class="lead font-weight-normal">2. How do we print something in javascript?</p>
+					<div class="form-check my-2 text-white-50">
+						<input type="radio" name="q2" value="A" checked>
+						<label class="form-check-label">print('something')</label>
+					</div>
+					<div class="form-check my-2 text-white-50">
+						<input type="radio" name="q2" value="B">
+						<label class="form-check-label">consol.log('something')</label>
+					</div>
+				</div>
+				<div class="my-5">
+					<p class="lead font-weight-normal">3. Can we use foreach() on HTMLCollection?</p>
+					<div class="form-check my-2 text-white-50">
+						<input type="radio" name="q3" value="A" checked>
+						<label class="form-check-label">Yes</label>
+					</div>
+					<div class="form-check my-2 text-white-50">
+						<input type="radio" name="q3" value="B">
+						<label class="form-check-label">No</label>
+					</div>
+				</div>
+
+				<div class="my-5">
+					<p class="lead font-weight-normal">4. What is Developer,s favorite array method?</p>
+					<div class="form-check my-2 text-white-50">
+						<input type="radio" name="q4" value="A" checked>
+						<label class="form-check-label">.foreach()</label>
+					</div>
+					<div class="form-check my-2 text-white-50">
+						<input type="radio" name="q4" value="B">
+						<label class="form-check-label">.slice</label>
+					</div>
+				</div>
+				<div class="text-center">
+					<input type="submit" class="btn btn-light">
+				</div>
+			</form>
+		</div>
+	</div>
+
+
+
+
+	<script src="quiz.js"></script>
+</body>
+</html>
